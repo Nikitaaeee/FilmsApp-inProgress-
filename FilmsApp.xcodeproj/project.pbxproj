@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0126A9532742CA42009D205C /* FilmCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0126A9522742CA42009D205C /* FilmCollectionViewCell.xib */; };
+		0126A9582742DCCF009D205C /* PosterFullViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0126A9572742DCCF009D205C /* PosterFullViewController.swift */; };
 		016F3D9C2726B5E800931669 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016F3D9B2726B5E800931669 /* AppDelegate.swift */; };
 		016F3D9E2726B5E800931669 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016F3D9D2726B5E800931669 /* SceneDelegate.swift */; };
 		016F3DA32726B5E800931669 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 016F3DA12726B5E800931669 /* Main.storyboard */; };
@@ -41,6 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0126A9522742CA42009D205C /* FilmCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilmCollectionViewCell.xib; sourceTree = "<group>"; };
+		0126A9572742DCCF009D205C /* PosterFullViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosterFullViewController.swift; sourceTree = "<group>"; };
 		016F3D982726B5E800931669 /* FilmsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FilmsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		016F3D9B2726B5E800931669 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		016F3D9D2726B5E800931669 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -114,6 +118,8 @@
 				016F3D9B2726B5E800931669 /* AppDelegate.swift */,
 				016F3D9D2726B5E800931669 /* SceneDelegate.swift */,
 				016F3DA12726B5E800931669 /* Main.storyboard */,
+				0126A9572742DCCF009D205C /* PosterFullViewController.swift */,
+				0126A9522742CA42009D205C /* FilmCollectionViewCell.xib */,
 				016F3DFB27303CEC00931669 /* FilmCollectionViewCell.swift */,
 				016F3DD12726B6B200931669 /* MainViewController.swift */,
 				016F3DD92726BA2900931669 /* DetailFilmViewController.swift */,
@@ -251,6 +257,7 @@
 			files = (
 				016F3DA82726B5EC00931669 /* LaunchScreen.storyboard in Resources */,
 				016F3DA52726B5EC00931669 /* Assets.xcassets in Resources */,
+				0126A9532742CA42009D205C /* FilmCollectionViewCell.xib in Resources */,
 				016F3DA32726B5E800931669 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,6 +289,7 @@
 				016F3D9C2726B5E800931669 /* AppDelegate.swift in Sources */,
 				016F3D9E2726B5E800931669 /* SceneDelegate.swift in Sources */,
 				016F3DF12726C85200931669 /* JSONModel.swift in Sources */,
+				0126A9582742DCCF009D205C /* PosterFullViewController.swift in Sources */,
 				016F3DFC27303CEC00931669 /* FilmCollectionViewCell.swift in Sources */,
 				016F3DDF2726BA3400931669 /* FilmPicsViewController.swift in Sources */,
 				016F3DDA2726BA2900931669 /* DetailFilmViewController.swift in Sources */,

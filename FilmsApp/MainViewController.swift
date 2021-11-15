@@ -38,6 +38,9 @@ class MainViewController: UIViewController {
         
         filmsSearchBar.delegate = self
         
+        let xibCell = UINib(nibName: "FilmCollectionViewCell", bundle: nil)
+        mainCollectionView.register(xibCell, forCellWithReuseIdentifier: "FilmCell")
+        mainCollectionView.reloadData()
 
         // Do any additional setup after loading the view.
     }

@@ -1,29 +1,23 @@
 //
-//  DetailFilmViewController.swift
+//  PosterFullViewController.swift
 //  FilmsApp
 //
-//  Created by Никита on 25.10.2021.
+//  Created by Никита on 15.11.2021.
 //
 
 import UIKit
 
-class DetailFilmViewController: UIViewController {
-    
-    @IBOutlet weak var posterImageView: UIImageView!
-    @IBOutlet weak var filmTitleLabel: UILabel!
-    @IBOutlet weak var releaseYearLabel: UILabel!
-    @IBOutlet weak var ratingLabel: UILabel!
-    @IBOutlet weak var galleryCollection: UICollectionView!
-    @IBOutlet weak var descriptionTextView: UITextView!
-    
+class PosterFullViewController: UIViewController {
 
+    @IBOutlet weak var fullPosterImageView: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func tapGestureAction(_ sender: UITapGestureRecognizer) {
+    @IBAction func closeButton(_ sender: UIButton) {
     }
     
     /*
