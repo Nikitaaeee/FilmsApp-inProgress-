@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0126A9532742CA42009D205C /* FilmCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0126A9522742CA42009D205C /* FilmCollectionViewCell.xib */; };
 		0126A9582742DCCF009D205C /* PosterFullViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0126A9572742DCCF009D205C /* PosterFullViewController.swift */; };
+		0126A95D275625FD009D205C /* RoundingTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0126A95C275625FD009D205C /* RoundingTransition.swift */; };
 		016F3D9C2726B5E800931669 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016F3D9B2726B5E800931669 /* AppDelegate.swift */; };
 		016F3D9E2726B5E800931669 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016F3D9D2726B5E800931669 /* SceneDelegate.swift */; };
 		016F3DA32726B5E800931669 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 016F3DA12726B5E800931669 /* Main.storyboard */; };
@@ -45,6 +46,7 @@
 /* Begin PBXFileReference section */
 		0126A9522742CA42009D205C /* FilmCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilmCollectionViewCell.xib; sourceTree = "<group>"; };
 		0126A9572742DCCF009D205C /* PosterFullViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosterFullViewController.swift; sourceTree = "<group>"; };
+		0126A95C275625FD009D205C /* RoundingTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundingTransition.swift; sourceTree = "<group>"; };
 		016F3D982726B5E800931669 /* FilmsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FilmsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		016F3D9B2726B5E800931669 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		016F3D9D2726B5E800931669 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 				016F3D9D2726B5E800931669 /* SceneDelegate.swift */,
 				016F3DA12726B5E800931669 /* Main.storyboard */,
 				0126A9572742DCCF009D205C /* PosterFullViewController.swift */,
+				0126A95C275625FD009D205C /* RoundingTransition.swift */,
 				0126A9522742CA42009D205C /* FilmCollectionViewCell.xib */,
 				016F3DFB27303CEC00931669 /* FilmCollectionViewCell.swift */,
 				016F3DD12726B6B200931669 /* MainViewController.swift */,
@@ -283,6 +286,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0126A95D275625FD009D205C /* RoundingTransition.swift in Sources */,
 				016F3DE92726BA5200931669 /* FavoriteFilmsViewController.swift in Sources */,
 				016F3DE42726BA4100931669 /* FullPicViewController.swift in Sources */,
 				016F3DD22726B6B200931669 /* MainViewController.swift in Sources */,

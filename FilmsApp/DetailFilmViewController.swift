@@ -7,7 +7,7 @@
 
 import UIKit
 
-class DetailFilmViewController: UIViewController {
+class DetailFilmViewController: UIViewController, UIViewControllerTransitioningDelegate{
     
     @IBOutlet weak var posterImageView: UIImageView!
     @IBOutlet weak var filmTitleLabel: UILabel!
@@ -16,9 +16,18 @@ class DetailFilmViewController: UIViewController {
     @IBOutlet weak var galleryCollection: UICollectionView!
     @IBOutlet weak var descriptionTextView: UITextView!
     
+    var receivedIndex: Int = Int()
+    
+    var transition: RoundingTransition = RoundingTransition()
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        posterImageView.image = UIImage(named: testArray[receivedIndex].testPic ?? "image1")
+        filmTitleLabel.text = testArray[receivedIndex].testTitle
+        releaseYearLabel.text = testArray[receivedIndex].testYear
+        ratingLabel.text = testArray[receivedIndex].testRating
 
         // Do any additional setup after loading the view.
     }
@@ -26,14 +35,32 @@ class DetailFilmViewController: UIViewController {
     @IBAction func tapGestureAction(_ sender: UITapGestureRecognizer) {
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        
+        transition.TransitionProfile = .show
+        transition.start = posterImageView.center
+        transition.roundColor = UIColor.white
+        
+        return transition
     }
-    */
-
+    
+    func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        
+        transition.TransitionProfile = .cancel
+        transition.start = posterImageView.center
+        transition.roundColor = UIColor.white
+        
+        return transition
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let destVC = segue.destination as? PosterFullViewController else {
+            return
+            
+        }
+        destVC.detailIndexPath = receivedIndex
+        destVC.transitioningDelegate = self
+        destVC.modalPresentationStyle = .custom
+        
+    }
 }
